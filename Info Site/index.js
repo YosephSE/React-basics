@@ -12,8 +12,8 @@ function HeaderNav() {
   return (
     <header>
       <nav>
+      <img src="logo.png" />
         <ul className="flex">
-          <img src="logo.png" />
           <li>React</li>
           <li>About</li>
         </ul>

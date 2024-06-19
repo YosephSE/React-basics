@@ -10,3 +10,14 @@ html, body {
 img{
     width: 40px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex > li {
+    padding: 10px;
+}

@@ -1,16 +1,43 @@
-
-function ReactApp(){
+function Page() {
   return (
     <div>
-        <img src="logo.png" width="40px"/>
-        <h1>Fun Facts About React!</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100k stars on Github</li>
-            <li>It is maintained by Facebook</li>
-        </ul>
+      <HeaderNav />
+      <Main />
+      <Footer />
     </div>
-)
+  );
 }
-ReactDOM.render(<ReactApp/>, document.querySelector('#root'))
+
+function HeaderNav() {
+  return (
+    <header>
+      <nav>
+        <img src="logo.png" />
+        <ul>
+          <li>React</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+function Main() {
+  return (
+  <div>
+    <h1>Fun Facts About React!</h1>
+    <ul>
+      <li>Was first released in 2013</li>
+      <li>Was originally created by Jordan Walke</li>
+      <li>Has well over 100k stars on Github</li>
+      <li>It is maintained by Facebook</li>
+    </ul>
+  </div>)
+}
+
+function Footer() {
+  return (
+    <footer>© 2024 Yoseph Kedir. All rights reserved.</footer>
+  )
+}
+
+ReactDOM.render(<Page />, document.querySelector("#root"));

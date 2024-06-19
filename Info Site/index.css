@@ -2,3 +2,22 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.flex{
+    display: flex;
+    list-style-type: none;
+}
+img{
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex > li {
+    padding: 10px;
+}
